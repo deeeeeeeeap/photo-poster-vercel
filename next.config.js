@@ -4,10 +4,8 @@ const nextConfig = {
   images: {
     formats: ['image/webp', 'image/avif'],
   },
-  // Vercel Serverless Function 配置
-  experimental: {
-    serverComponentsExternalPackages: ['sharp'],
-  },
+  // Sharp 外部包配置（Next.js 15 新语法）
+  serverExternalPackages: ['sharp'],
 }
 
 module.exports = nextConfig
